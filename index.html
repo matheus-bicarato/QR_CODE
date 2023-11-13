@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QR Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="qr-header">
+            <h1>Gerador QR Code</h1>
+
+            <!-- Digite o texto -->
+            <input type="text" placeholder="Digite o texto" id="qr-text">
+
+            <!-- Tamanhos configurados -->
+            <div>
+                <label for="sizes">Selecione o tamanho:</label>
+
+                <!-- Seleção dos tamanhos do QR Code -->
+                <select  id="sizes">
+                    <option value="100">100X100</option>
+                    <option value="200">200X200</option>
+                    <option value="300">300X300</option>
+                    <option value="400">400X400</option>
+                    <option value="500">500X500</option>
+                    <option value="600">600X600</option>
+                    <option value="700">700X700</option>
+                    <option value="800">800X800</option>
+                    <option value="900">900X900</option>
+                    <option value="1000">1000X1000</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Corpo QR Code -->
+        <div class="qr-body"></div>
+
+        <!-- Rodapé -->
+        <div class="qr-footer">
+            <a href="" id="generateBtn">Gerar</a>
+            <a href="" id="downloadBtn" download="QR_Code.png">Download</a>
+        </div>
+    </div>
+
+    <!-- Função do Javascript -->
+    <script src="script.js"></script>
+
+    <!-- Gerador do QR Code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
